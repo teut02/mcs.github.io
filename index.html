@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> Portfólio | MCS </title>
+
+  <!-- Fonte Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- CSS externo -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+ <!-- ===== HEADER ===== -->
+  <header>
+    <div class="container navbar">
+      <a href="#" class="nav-brand">[Meu Portfólio]</a>
+      <nav class="nav-links">
+        <a href="#projects">Sobre</a>
+        <a href="#about">Projetos</a>
+        <a href="#contact">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero container">
+    <div class="hero-content">
+      <h1>Olá, me chamo</h1>
+      <h2>Mateus Conceição da Silva</h2>
+      <p>Desenvolvedor Full Stack Python focado em HTML, CSS, JavaScript.</p>
+    </div>
+    <div class="hero-img">
+      <img src="imagens/Foto - Mateus Silva.jpg" alt="Imagem de destaque" />
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="about container">
+    <h2 class="section-title">Sobre mim</h2>
+    <p>Bem, não custa nada reforçar que me chamo Mateus Conceição da Silva. Tenho 26 anos e sou um carioca completamente apaixonado e defensor ferrenho do Rio de Janeiro. Desde pequeno sou um aficionado por cinema, o que me levou a graduar em Audiovisual. Iniciei minha carreira profissional atuando com Projetos e Processos, mas logo tive contato com a programação e resolvi investir nessa migração de área. Sou um iniciante Desenvolvedor Web Full Stack buscando criar experiências digitais e aliar minha paixão em Audiovisual com a Tecnologia.</p>
+    <p class="tech-line">
+        Atualmente tenho estudado e me desenvolvido nas seguintes competências:&nbsp;
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub" />
+    </p>
+</div>
+  </section> 
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="container" style="padding: var(--section-padding) 0;">
+    <h2 class="section-title">Projetos</h2>
+
+    <div class="projects-grid">
+      <!-- Projeto 1 -->
+      <article class="project-card">
+        <img src="imagens/yt.png" alt="Screenshot do Projeto 1" />
+        <div class="card-body">
+          <h3>Youtube Downloader</h3>
+          <p>Breve descrição do projeto para contextualizar o visitante.</p>
+          <div class="tech-list">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+          <div class="card-actions">
+            <a class="btn-primary" href="https://github.com/seu-usuario/projeto1" target="_blank">Repositório</a>
+            <a class="btn-primary" href="https://seuprojeto1.com" target="_blank">Demo</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Projeto 2 -->
+      <article class="project-card">
+        <img src="imagens/crawler.png" alt="Screenshot do Projeto 2" />
+        <div class="card-body">
+          <h3>Web Crawler</h3>
+          <p>Breve descrição que destaque a funcionalidade principal do projeto.</p>
+          <div class="tech-list">
+            <span>React</span><span>Tailwind CSS</span>
+          </div>
+          <div class="card-actions">
+            <a class="btn-primary" href="https://github.com/seu-usuario/projeto2" target="_blank">Repositório</a>
+            <a class="btn-primary" href="https://seuprojeto2.com" target="_blank">Demo</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Projeto 3 -->
+      <article class="project-card">
+        <img src="imagens/music.png" alt="Screenshot do Projeto 3" />
+        <div class="card-body">
+          <h3>Music Player</h3>
+          <p>Mais uma breve descrição para instigar o interesse no projeto.</p>
+          <div class="tech-list">
+            <span>Vue</span><span>SCSS</span>
+          </div>
+          <div class="card-actions">
+            <a class="btn-primary" href="https://github.com/seu-usuario/projeto3" target="_blank">Repositório</a>
+            <a class="btn-primary" href="https://seuprojeto3.com" target="_blank">Demo</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="contact container">
+  <h2 class="section-title">Contato</h2>
+
+  <!-- Ícones rápidos -->
+  <div class="contact-icons">
+    <!-- abre Outlook/Gmail etc. -->
+    <a href="mailto:mmsilva22@hotmail.com
+          ?subject=Contato%20via%20Portf%C3%B3lio
+          &body=Olá%20Mateus%2C%20gostaria%20de%20falar%20sobre"
+        class="contact-icon" title="E-mail">
+        <i class="fas fa-envelope"></i>
+    </a>
+
+    <!-- GitHub -->
+    <a href="https://github.com/teut02"
+       class="contact-icon" target="_blank" title="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/in/mateus-silva-011363160/"
+       class="contact-icon" target="_blank" title="LinkedIn">
+      <i class="fab fa-linkedin"></i>
+    </a>
+
+    <!-- WhatsApp com mensagem pré-preenchida -->
+    <a href="https://wa.me/5521976646761?text=Olá%20Mateus!%20Vim%20pelo%20portfólio."
+       class="contact-icon" target="_blank" title="WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+  </div>
+</section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    Feito com 💻 por Mateus Conceição da Silva • © <span id="year"></span>
+  </footer>
+
+  <!-- Botão flutuante -->
+  <button id="back-to-top" aria-label="Voltar ao topo">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script>
+    const yearSpan = document.getElementById('year');
+    yearSpan.textContent = new Date().getFullYear();
+  </script>
+
+  <script>
+  /* === Fade-in nos project-cards === */
+    document.querySelectorAll('.project-card').forEach(card => card.classList.add('hidden'));
+    const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+        if (e.isIntersecting) e.target.classList.add('fade-in');
+    });
+    },{ threshold: 0.2 });
+    document.querySelectorAll('.project-card').forEach(card => observer.observe(card));
+
+  /* === Botão voltar ao topo === */
+    const topBtn = document.getElementById('back-to-top');
+    window.addEventListener('scroll', () => {
+    topBtn.classList.toggle('visible', window.scrollY > 400);
+    });
+    topBtn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+</script>
+</body>
+</html>

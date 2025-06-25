@@ -1,0 +1,289 @@
+:root {
+  --color-bg: #ebe8e8;
+  --color-primary: #8413ca;
+  --color-text: #111827;
+  --color-muted: #6b7280;
+  --section-padding: 4rem;
+  --container-width: 90%;
+  --container-max: 1100px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+.container {
+  width: var(--container-width);
+  max-width: var(--container-max);
+  margin: 0 auto;
+}
+
+/* ===== HEADER ===== */
+header {
+  position: sticky;
+  top: 0;
+  background: var(--color-bg);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  z-index: 10;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.nav-brand {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--color-text);
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: var(--color-primary);
+}
+
+/* ===== HERO ===== */
+.hero {
+  padding: var(--section-padding) 0;
+  display: grid;
+  gap: 2rem;
+  align-items: center;
+}
+
+.hero-content h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin-bottom: 0.5rem;
+}
+
+.hero-content h2 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: 0.5rem;
+}
+
+.hero-content p {
+  color: var(--color-muted);
+  margin-bottom: 1.5rem;
+}
+
+.btn-primary {
+  background: var(--color-primary);
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.btn-primary:hover {
+  background: #1e4ed8;
+}
+
+.hero-img img {
+  width: 100%;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+
+/* ===== PROJECTS ===== */
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.projects-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.project-card {
+  border: 1px solid #ebe9e5;
+  border-radius: 1rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.project-card .card-body {
+  padding: 1.25rem;
+  flex: 1;
+}
+
+.project-card h3 {
+  text-align: center;
+}
+
+.project-card p {
+  color: var(--color-muted);
+  margin-bottom: 0.75rem;
+}
+
+.tech-list {
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tech-list span {
+  background: #eaeaea;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.card-actions a {
+  margin-right: 0.5rem;
+}
+
+/* ===== ABOUT & CONTACT ===== */
+.about,
+.contact {
+  padding: var(--section-padding) 0;
+}
+
+.about p {
+  margin-bottom: 1.5rem;
+}
+
+.tech-line i,
+.tech-line img {
+  width: 32px;          /* ajuste como quiser */
+  height: 32px;
+  margin-left: 0.5rem;  /* espaço entre eles */
+  vertical-align: middle;
+}
+
+.tech-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.tech-icons img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.2s ease;
+}
+
+.tech-icons img:hover {
+  transform: scale(1.1);
+}
+
+.contact-links {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.contact-links a {
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+.contact-links a:hover {
+  color: var(--color-primary);
+}
+
+/* --- Ícones de contato --- */
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.contact-icon {
+  font-size: 2rem;
+  color: var(--color-text);
+  transition: color .2s, transform .2s;
+}
+
+.contact-icon:hover {
+  color: var(--color-primary);
+  transform: translateY(-3px);
+}
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 0.875rem;
+  color: var(--color-muted);
+  border-top: 1px solid #e5e7eb;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (min-width: 768px) {
+  .hero {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Evita que o nome quebre linha */
+.hero-content h2 {
+  white-space: nowrap;
+}
+
+/* === Animação de HOVER nos cards === */
+.project-card{
+  transition: transform .3s, box-shadow .3s;
+}
+.project-card:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px rgba(0,0,0,.25);
+}
+
+/* Fade-in quando o card entra na viewport */
+.project-card.hidden{ opacity: 0; transform: translateY(30px); }
+.project-card.fade-in{ opacity: 1; transform: translateY(0); transition: all .6s ease; }
+
+/* === Botão “voltar ao topo” === */
+#back-to-top{
+  position: fixed; bottom: 2rem; right: 2rem;
+  width: 48px; height: 48px; border-radius: 50%;
+  background: var(--color-primary); color: #fff; border: none;
+  font-size: 1.25rem; display: grid; place-items: center;
+  cursor: pointer; opacity: 0; pointer-events: none;
+  transition: opacity .3s, transform .3s;
+}
+#back-to-top.visible{
+  opacity: 1; pointer-events: auto; transform: translateY(0);
+}
