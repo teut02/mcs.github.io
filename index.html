@@ -15,15 +15,22 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div id="top"></div>
+
+  <!-- Navegação de seções -->
+  <div class="section-nav">
+    <button id="sec-up"   aria-label="Seção anterior"><i class="fas fa-chevron-up"></i></button>
+    <button id="sec-down" aria-label="Próxima seção"><i class="fas fa-chevron-down"></i></button>
+  </div>
 
  <!-- ===== HEADER ===== -->
   <header>
     <div class="container navbar">
-      <a href="#" class="nav-brand">[Meu Portfólio]</a>
+      <a href="#top" class="nav-brand">mcs</a>
       <nav class="nav-links">
-        <a href="#projects">Sobre</a>
-        <a href="#about">Projetos</a>
-        <a href="#contact">Contato</a>
+        <a href="#about">sobre</a>
+        <a href="#projects">projetos</a>
+        <a href="#contact">contato</a>
       </nav>
     </div>
   </header>
@@ -31,18 +38,22 @@
   <!-- ===== HERO ===== -->
   <section class="hero container">
     <div class="hero-content">
-      <h1>Olá, me chamo</h1>
-      <h2>Mateus Conceição da Silva</h2>
-      <p>Desenvolvedor Full Stack Python focado em HTML, CSS, JavaScript.</p>
+      <h1 class="hero-title">
+      <span>olá</span>
+      <span>muito prazer</span>
+      <span>me chamo</span>
+      <span class="hero-name">mateus</span>
+      </h1>
+      <p>desenvolvedor full stack focado em python, html, css, javascript</p>
     </div>
     <div class="hero-img">
-      <img src="imagens/Foto - Mateus Silva.jpg" alt="Imagem de destaque" />
+      <img src="imagens/mcs 1.jpg" alt="Mateus Conceição da Silva" />
     </div>
   </section>
 
   <!-- ===== ABOUT ===== -->
   <section id="about" class="about container">
-    <h2 class="section-title">Sobre mim</h2>
+    <h2 class="section-title">sobre mim</h2>
     <p>Bem, não custa nada reforçar que me chamo Mateus Conceição da Silva. Tenho 26 anos e sou um carioca completamente apaixonado e defensor ferrenho do Rio de Janeiro. Desde pequeno sou um aficionado por cinema, o que me levou a graduar em Audiovisual. Iniciei minha carreira profissional atuando com Projetos e Processos, mas logo tive contato com a programação e resolvi investir nessa migração de área. Sou um iniciante Desenvolvedor Web Full Stack buscando criar experiências digitais e aliar minha paixão em Audiovisual com a Tecnologia.</p>
     <p class="tech-line">
         Atualmente tenho estudado e me desenvolvido nas seguintes competências:&nbsp;
@@ -58,21 +69,21 @@
 
   <!-- ===== PROJECTS ===== -->
   <section id="projects" class="container" style="padding: var(--section-padding) 0;">
-    <h2 class="section-title">Projetos</h2>
+    <h2 class="section-title">projetos</h2>
 
     <div class="projects-grid">
       <!-- Projeto 1 -->
       <article class="project-card">
         <img src="imagens/yt.png" alt="Screenshot do Projeto 1" />
         <div class="card-body">
-          <h3>Youtube Downloader</h3>
-          <p>Breve descrição do projeto para contextualizar o visitante.</p>
+          <h3>youtube downloader</h3>
+          <p>breve descrição do projeto para contextualizar o visitante.</p>
           <div class="tech-list">
-            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            <span>html</span><span>css</span><span>javascript</span>
           </div>
           <div class="card-actions">
-            <a class="btn-primary" href="https://github.com/seu-usuario/projeto1" target="_blank">Repositório</a>
-            <a class="btn-primary" href="https://seuprojeto1.com" target="_blank">Demo</a>
+            <a class="btn-primary" href="https://github.com/seu-usuario/projeto1" target="_blank">repositório</a>
+            <a class="btn-primary" href="https://seuprojeto1.com" target="_blank">demo</a>
           </div>
         </div>
       </article>
@@ -81,14 +92,14 @@
       <article class="project-card">
         <img src="imagens/crawler.png" alt="Screenshot do Projeto 2" />
         <div class="card-body">
-          <h3>Web Crawler</h3>
-          <p>Breve descrição que destaque a funcionalidade principal do projeto.</p>
+          <h3>web crawler</h3>
+          <p>breve descrição que destaque a funcionalidade principal do projeto.</p>
           <div class="tech-list">
-            <span>React</span><span>Tailwind CSS</span>
+            <span>react</span><span>tailwind css</span>
           </div>
           <div class="card-actions">
-            <a class="btn-primary" href="https://github.com/seu-usuario/projeto2" target="_blank">Repositório</a>
-            <a class="btn-primary" href="https://seuprojeto2.com" target="_blank">Demo</a>
+            <a class="btn-primary" href="https://github.com/seu-usuario/projeto2" target="_blank">repositório</a>
+            <a class="btn-primary" href="https://seuprojeto2.com" target="_blank">demo</a>
           </div>
         </div>
       </article>
@@ -97,14 +108,14 @@
       <article class="project-card">
         <img src="imagens/music.png" alt="Screenshot do Projeto 3" />
         <div class="card-body">
-          <h3>Music Player</h3>
-          <p>Mais uma breve descrição para instigar o interesse no projeto.</p>
+          <h3>music player</h3>
+          <p>breve descrição para instigar o interesse no projeto.</p>
           <div class="tech-list">
-            <span>Vue</span><span>SCSS</span>
+            <span>vue</span><span>scss</span>
           </div>
           <div class="card-actions">
-            <a class="btn-primary" href="https://github.com/seu-usuario/projeto3" target="_blank">Repositório</a>
-            <a class="btn-primary" href="https://seuprojeto3.com" target="_blank">Demo</a>
+            <a class="btn-primary" href="https://github.com/seu-usuario/projeto3" target="_blank">repositório</a>
+            <a class="btn-primary" href="https://seuprojeto3.com" target="_blank">demo</a>
           </div>
         </div>
       </article>
@@ -113,7 +124,7 @@
 
   <!-- ===== CONTACT ===== -->
   <section id="contact" class="contact container">
-  <h2 class="section-title">Contato</h2>
+  <h2 class="section-title">contato</h2>
 
   <!-- Ícones rápidos -->
   <div class="contact-icons">
@@ -178,6 +189,46 @@
     topBtn.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
     });
+</script>
+
+<script>
+  /* === Navegação de seções ↑ ↓ === */
+  (function () {
+    const sections = [...document.querySelectorAll('section')];
+    sections.sort((a,b) => a.offsetTop - b.offsetTop);
+
+    const btnUp   = document.getElementById('sec-up');
+    const btnDown = document.getElementById('sec-down');
+    let indexAtual = 0;
+
+    function irPara(idx) {
+      if (idx < 0 || idx >= sections.length) return;
+      sections[idx].scrollIntoView({ behavior: 'smooth' });
+      indexAtual = idx;
+      atualizaEstadoBotoes();
+    }
+
+    function atualizaEstadoBotoes() {
+      btnUp.disabled   = (indexAtual === 0);
+      btnDown.disabled = (indexAtual === sections.length - 1);
+    }
+
+    const visObs = new IntersectionObserver(entrs => {
+      entrs.forEach(e => {
+        if (e.isIntersecting) {
+          indexAtual = sections.indexOf(e.target);
+          atualizaEstadoBotoes();
+        }
+      });
+    }, { threshold: 0.6 });
+
+    sections.forEach(sec => visObs.observe(sec));
+
+    btnUp.addEventListener('click',   () => irPara(indexAtual - 1));
+    btnDown.addEventListener('click', () => irPara(indexAtual + 1));
+
+    atualizaEstadoBotoes();
+  })();
 </script>
 </body>
 </html>

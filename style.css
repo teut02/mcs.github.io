@@ -1,6 +1,6 @@
 :root {
-  --color-bg: #ebe8e8;
-  --color-primary: #8413ca;
+  --color-bg: #c8c4b8;
+  --color-primary: #8e433d;
   --color-text: #111827;
   --color-muted: #6b7280;
   --section-padding: 4rem;
@@ -56,7 +56,7 @@ header {
 
 .nav-links {
   display: flex;
-  gap: 1.5rem;
+  gap: 0.2rem;
 }
 
 .nav-links a {
@@ -77,14 +77,16 @@ header {
   align-items: center;
 }
 
-.hero-content h1 {
+/* ------------- TITULO ------------- */
+.hero-title {
   font-size: clamp(2rem, 5vw, 3rem);
-  margin-bottom: 0.5rem;
+  line-height: 1.1;           /* compacto sem colar tudo */
+  margin-bottom: 1.5rem;      /* distância até o <p> */
 }
 
-.hero-content h2 {
-    font-size: clamp(2rem, 5vw, 3rem);
-    margin-bottom: 0.5rem;
+.hero-title span {
+  display: block;             /* cada frase em uma linha */
+  margin-bottom: 0.25rem;     /* ajuste fino do espaçamento entre linhas */
 }
 
 .hero-content p {
@@ -107,8 +109,8 @@ header {
 }
 
 .hero-img img {
-  width: 100%;
-  border-radius: 1rem;
+  width: 125%;
+  border-radius: 24px 60px;
   object-fit: cover;
 }
 
@@ -126,7 +128,7 @@ header {
 }
 
 .project-card {
-  border: 1px solid #ebe9e5;
+  border: 1px solid #c8c4b8;
   border-radius: 1rem;
   overflow: hidden;
   display: flex;
@@ -287,3 +289,81 @@ footer {
 #back-to-top.visible{
   opacity: 1; pointer-events: auto; transform: translateY(0);
 }
+
+/* ╔══════════════════════════════════════════════╗
+   ║  Sections em tela cheia (100 vh)             ║
+   ╚══════════════════════════════════════════════╝ */
+
+/* 1) Todas as seções ocupam 100 % da viewport  */
+section {
+  min-height: 100vh;         /* altura mínima = viewport */
+  box-sizing: border-box;    /* inclui padding no cálculo */
+}
+
+/* 2) Se o conteúdo couber na tela, centraliza verticalmente */
+section:not(.hero) {         /* hero já tem flex próprio  */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   /* alinha verticalmente      */
+}
+
+/* 3) (Opcional) Snap de rolagem: vai “travando” seção a seção */
+html {                        /* remova se não quiser snap */
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;   /* rolagem suave             */
+}
+section {                     /* idem: comente se não quiser */
+  scroll-snap-align: start;
+}
+
+/* ╔════════════════════════════════════╗
+   ║  (A) Esconde a barra de rolagem    ║
+   ╚════════════════════════════════════╝ */
+html, body {
+  scrollbar-width: none;          /* Firefox */
+  -ms-overflow-style: none;       /* IE/Edge */
+}
+html::-webkit-scrollbar,          /* Chrome/Safari */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* ╔════════════════════════════════════╗
+   ║  (B) Container dos botões          ║
+   ╚════════════════════════════════════╝ */
+.section-nav {
+  position: fixed;
+  right: 1.75rem;
+  bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+  z-index: 9999;
+}
+
+/* Estilo comum aos botões ↑ ↓ */
+.section-nav button {
+  all: unset;
+  /* Remove largura e altura fixas para ajustar ao conteúdo */
+  padding: 0;
+  background: transparent;
+  color: var(--accent, #8e433d);
+  font-size: 2rem;   /* aumenta o tamanho da seta */
+  cursor: pointer;
+  box-shadow: none;
+  border-radius: 0;
+  display: inline;   /* deixa inline, só a seta */
+  transition: color .2s;
+}
+
+.section-nav button:hover {
+  color: #8e433d; /* ou qualquer cor de destaque para o hover */
+  transform: none; /* remove o efeito de mover pra cima */
+}
+
+.section-nav button[disabled] {
+  opacity: .35;
+  pointer-events: none;
+}
+
+#back-to-top { display: none !important; }
