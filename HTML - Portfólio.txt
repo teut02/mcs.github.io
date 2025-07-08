@@ -44,7 +44,7 @@
       <span>me chamo</span>
       <span class="hero-name">mateus</span>
       </h1>
-      <p>desenvolvedor full stack focado em python</p>
+      <p>desenvolvedor full stack focado em python, html, css, javascript</p>
     </div>
     <div class="hero-img">
       <img src="imagens/mcs 1.jpg" alt="Mateus Conceição da Silva" />
@@ -54,9 +54,9 @@
   <!-- ===== ABOUT ===== -->
   <section id="about" class="about container">
     <h2 class="section-title">sobre mim</h2>
-    <p>meu nome é mateus conceição da silva. tenho vinte e seis anos e sou um carioca completamente apaixonado e defensor ferrenho do rio de janeiro. desde pequeno sou um aficionado por cinema, o que me levou a graduar em Audiovisual. iniciei minha carreira profissional atuando com projetos e processos educacionais, mas logo tive contato com a programação e resolvi investir nessa migração de área. sou um iniciante desenvolvedor full stack buscando criar experiências digitais e aliar minha paixão em audiovisual com a tecnologia, mas não me prendo a isso. estou aqui para aprender e evoluir.</p>
+    <p>Bem, não custa nada reforçar que me chamo Mateus Conceição da Silva. Tenho 26 anos e sou um carioca completamente apaixonado e defensor ferrenho do Rio de Janeiro. Desde pequeno sou um aficionado por cinema, o que me levou a graduar em Audiovisual. Iniciei minha carreira profissional atuando com Projetos e Processos, mas logo tive contato com a programação e resolvi investir nessa migração de área. Sou um iniciante Desenvolvedor Web Full Stack buscando criar experiências digitais e aliar minha paixão em Audiovisual com a Tecnologia.</p>
     <p class="tech-line">
-        atualmente tenho estudado e me desenvolvido nas seguintes competências:&nbsp;
+        Atualmente tenho estudado e me desenvolvido nas seguintes competências:&nbsp;
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" />
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" />
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
@@ -74,36 +74,48 @@
     <div class="projects-grid">
       <!-- Projeto 1 -->
       <article class="project-card">
-        <img src="imagens/calculadora.png" alt="Screenshot do Projeto 1" />
+        <img src="imagens/yt.png" alt="Screenshot do Projeto 1" />
         <div class="card-body">
-          <h3>calculadora de imc</h3>
-          <p>calculadora simples de imc (índice de massa corporal), que permite obter o resultado e a classificação correspondente</p>
+          <h3>youtube downloader</h3>
+          <p>breve descrição do projeto para contextualizar o visitante.</p>
+          <div class="tech-list">
+            <span>html</span><span>css</span><span>javascript</span>
+          </div>
           <div class="card-actions">
-            <a class="btn-primary" href="https://github.com/teut02/Tarefa-4.11.git" target="_blank">repositório</a>
+            <a class="btn-primary" href="https://github.com/seu-usuario/projeto1" target="_blank">repositório</a>
+            <a class="btn-primary" href="https://seuprojeto1.com" target="_blank">demo</a>
           </div>
         </div>
       </article>
 
       <!-- Projeto 2 -->
       <article class="project-card">
-        <img src="imagens/adivinhaçao.png" alt="Screenshot do Projeto 2" />
+        <img src="imagens/crawler.png" alt="Screenshot do Projeto 2" />
         <div class="card-body">
-          <h3>jogo de adivinhação</h3>
-          <p>será capaz de vencer o jogo? quão sortudo você é para conseguir adivinhar o número de primeira? 10 chances, é tudo que terá</p>
+          <h3>web crawler</h3>
+          <p>breve descrição que destaque a funcionalidade principal do projeto.</p>
+          <div class="tech-list">
+            <span>react</span><span>tailwind css</span>
+          </div>
           <div class="card-actions">
-            <a class="btn-primary" href="https://github.com/teut02/Tarefa-5.12.git" target="_blank">repositório</a>
+            <a class="btn-primary" href="https://github.com/seu-usuario/projeto2" target="_blank">repositório</a>
+            <a class="btn-primary" href="https://seuprojeto2.com" target="_blank">demo</a>
           </div>
         </div>
       </article>
 
       <!-- Projeto 3 -->
       <article class="project-card">
-        <img src="imagens/gastos.png" alt="Screenshot do Projeto 3" />
+        <img src="imagens/music.png" alt="Screenshot do Projeto 3" />
         <div class="card-body">
-          <h3>controle de gastos</h3>
-          <p>criado para ajudar nos registros diários de gastos com o intuito de controlar o quanto sai de nossa conta mensalmente</p>
+          <h3>music player</h3>
+          <p>breve descrição para instigar o interesse no projeto.</p>
+          <div class="tech-list">
+            <span>vue</span><span>scss</span>
+          </div>
           <div class="card-actions">
-            <a class="btn-primary" href="https://github.com/teut02/Tarefa-9.12.git" target="_blank">repositório</a>
+            <a class="btn-primary" href="https://github.com/seu-usuario/projeto3" target="_blank">repositório</a>
+            <a class="btn-primary" href="https://seuprojeto3.com" target="_blank">demo</a>
           </div>
         </div>
       </article>
